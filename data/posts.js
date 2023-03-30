@@ -1,4 +1,4 @@
-const fs = require('node:fs/promises');
+const fs = require('fs').promises;
 
 async function getStoredPosts() {
   const rawFileContent = await fs.readFile('posts.json', { encoding: 'utf-8' });
